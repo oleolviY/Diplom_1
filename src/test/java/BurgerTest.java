@@ -1,11 +1,13 @@
-package praktikum;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
+import praktikum.Bun;
+import praktikum.Burger;
+import praktikum.Ingredient;
+import praktikum.IngredientType;
 
 import static org.junit.Assert.assertEquals;
 import static praktikum.Constants.*;
