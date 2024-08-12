@@ -4,7 +4,7 @@ import praktikum.IngredientType;
 
 public class EnumTest {
     @Test
-    public void testEnum(){
+    public void testEnum() {
         Assert.assertEquals(IngredientType.SAUCE, IngredientType.valueOf("SAUCE"));
     }
 }

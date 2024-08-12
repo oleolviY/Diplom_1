@@ -25,11 +25,6 @@ public class BurgerParamTest {
 
     private float expectedPrice;
 
-    @Before
-    public void setup() {
-        MockitoAnnotations.openMocks(this);
-    }
-
     public BurgerParamTest(float ingredientsPrice, float bunPrice, float expectedPrice) {
         this.ingredientsPrice = ingredientsPrice;
         this.bunPrice = bunPrice;
@@ -42,6 +37,11 @@ public class BurgerParamTest {
                 {10.0f, 10.0f, 30.0f},
                 {20.0f, 10.0f, 40.0f}
         };
+    }
+
+    @Before
+    public void setup() {
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test

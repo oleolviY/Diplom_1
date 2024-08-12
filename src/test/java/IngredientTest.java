@@ -1,18 +1,14 @@
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.Ingredient;
 import praktikum.IngredientType;
-
-import static java.lang.Enum.valueOf;
 import static org.junit.Assert.*;
 import static praktikum.Constants.FILLING_NAME;
 import static praktikum.Constants.FILLING_PRICE;
 import static praktikum.IngredientType.FILLING;
-import static praktikum.IngredientType.SAUCE;
+
 
 @RunWith(MockitoJUnitRunner.class)
 public class IngredientTest {
@@ -28,8 +24,9 @@ public class IngredientTest {
         IngredientType actualType = ingredient.getType();
         assertEquals(FILLING, actualType);
     }
+
     @Test
-    public void getNameTest(){
+    public void getNameTest() {
         String actualName = ingredient.getName();
         assertEquals(FILLING_NAME, actualName);
     }
